@@ -2,19 +2,33 @@ html{
     font-family: Roboto, sans-serif;
 }
 
+#github_link {
+    border-radius: 50%;
+    max-width: 30px;
+
+}
+
+
+
+
 #search_bar{
     display: block;
-    border: 1px solid grey;
+    border: 1px solid rgba(196, 196, 196, 100);
     padding: 2px;
     border-radius: 25px;
     align-items: center;
     justify-items: center;
 }
 
+#search_bar:hover{
+    box-shadow: 0px 0px 3px rgba(196, 196, 196, 100);
+
+}
+
+
 #search_box{
     border: none;
 }
-
 #search_box:active{
     border: none;
 }
