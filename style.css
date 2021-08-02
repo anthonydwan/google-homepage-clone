@@ -1,42 +1,57 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
 html{
     font-family: arial, sans-serif;
     line-height: 1.6;
     position: relative;
-    min-height: 100%;
+    min-height: 100vh;
 }
 
-#navbar{
+/* NAVIGATION BAR */
+nav{
+    width: 100vw;
+    height: 50px;
     display: flex;
     align-items: center;
-
+    box-sizing: border-box;
 }
 
-nav a{
+nav div a{
     text-decoration: none;
+    padding: 12px;
+}
+
+nav div a:hover{
+    text-decoration: underline;
+}
+
+nav div{
+    display: flex;
+    width: 50%;
+    align-items: center;
 }
 
 #nav_left{
-    justify-items: start;
+    justify-content: start;
 }
 
-nav_right{
-    justify-items: flex-end;
+#nav_right{
+    justify-content: flex-end;
 }
 
 #nav_left a{
     font-size: 14px;
     color: #222;
-
 }
 
-#nav_right a{
+#nav_right a {
     font-size: 13px;
     color: rgba(0,0,0,0.87);
-
-}
-
-nav a:hover{
-    text-decoration: underline;
+    padding: 10px;
 }
 
 #app_button:hover{
@@ -50,10 +65,12 @@ nav #github_link {
     max-width: 30px;
 }
 
+
+/* MAIN: SEARCH BAR */
+
 #search_bar{
     display: block;
     border: 1px solid rgba(196, 196, 196, 100);
-    padding: 2px;
     border-radius: 3em;
     align-items: center;
     justify-items: center;
@@ -70,8 +87,6 @@ nav #github_link {
     border: none;
 }
 
-
-
 .buttons{
     cursor:pointer;
     border: none;
@@ -83,26 +98,66 @@ nav #github_link {
     box-shadow: 0px 0px 1px rgba(196, 196, 196, 1);
 }
 
+/* FOOTER */
 
-.footers {
-    background-color: rgb(214, 214, 214);
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    padding: 10px 0px 10px 0px;
+.footer {
+    position: absolute;
+    background-color: #f2f2f2;
+    border-bottom: 1px solid rgb(209, 209, 209);
+    width: 100vw;
+    height: 70px;
+    color: #70757a;
+    font-size: 14px;
+    bottom: 0;
+    left: 0;
+
 }
 
-.footers a:hover{
+.footer a:hover{
     text-decoration: underline; 
 }
 
-#footer1 a{
-    text-decoration: none;
-    color: rgba(0,0,0,0.54);
-    font-size: 15px;
+/* top footer */
+#footer1 {
+    display: flex;
+    justify-content: start;
+    line-height: 15px;
+}
+
+#footer
+
+
+/* bottom footer */
+#footer2 {
+    display: flex;
+    /* padding: 12px 30px; */
+    align-items: center;
+    border: none;
+}
+
+#footer2 div{
+    display:flex; 
+    width: 50%;
+    border: none;
+}
+
+
+#footer2_left{
+    justify-content: start;
+}
+
+#footer2_right{
+    justify-content: flex-end;
 }
 
 #footer2 a{
     text-decoration: none;
-    color: #70757a;;
+    color: #70757a;
     font-size: 14px;
+    padding: 0px 10px 0px 10px;
 }
+
+#footer2 a:hover{
+    text-decoration: underline;
+}
+
