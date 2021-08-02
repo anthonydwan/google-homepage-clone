@@ -13,7 +13,7 @@ html{
 
 /* NAVIGATION BAR */
 nav{
-    width: 100vw;
+    width: 100%;
     height: 50px;
     display: flex;
     align-items: center;
@@ -77,17 +77,25 @@ nav #github_link {
 
 
 /* MAIN: SEARCH BAR */
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 55vh;
+}
 
 #search_bar{
-    display: block;
-    border: 1px solid rgba(196, 196, 196, 100);
+    border: 1px solid rgba(236, 236, 236, 100);
     border-radius: 3em;
     align-items: center;
-    justify-items: center;
+    width: 90vw;
+    max-width: 584px;
+    margin: 0 auto;
 }
 
 #search_bar:hover, #search_bar:active{
-    box-shadow: 0px 0px 5px rgba(196, 196, 196, 1);
+    box-shadow: 0px 0px 5px rgba(236, 236, 236, 1);
 }
 
 #search_box{
