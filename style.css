@@ -54,15 +54,25 @@ nav div{
     padding: 10px;
 }
 
-#app_button:hover{
+#app_button{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
     border-radius: 50%;
-    max-width: 30px;
-    background-color: grey;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+}
+
+#app_button:hover{
+    background-color: rgb(236, 236, 236);
+
 }
 
 nav #github_link {
     border-radius: 50%;
-    max-width: 30px;
+    width: 40px;
+    height: 40px;
 }
 
 
