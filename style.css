@@ -1,16 +1,42 @@
 html{
     font-family: arial, sans-serif;
-    font-size: 13px;
+    line-height: 1.6;
+    position: relative;
+    min-height: 100%;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+
 }
 
 nav a{
     text-decoration: none;
-    color: black;
+}
+
+#nav_left{
+    justify-items: start;
+}
+
+nav_right{
+    justify-items: flex-end;
+}
+
+#nav_left a{
+    font-size: 14px;
+    color: #222;
+
+}
+
+#nav_right a{
+    font-size: 13px;
+    color: rgba(0,0,0,0.87);
+
 }
 
 nav a:hover{
     text-decoration: underline;
-    color: black; 
 }
 
 #app_button:hover{
@@ -34,7 +60,7 @@ nav #github_link {
 }
 
 #search_bar:hover, #search_bar:active{
-    box-shadow: 0px 0px 5px rgba(196, 196, 196, 100);
+    box-shadow: 0px 0px 5px rgba(196, 196, 196, 1);
 }
 
 #search_box{
@@ -44,35 +70,39 @@ nav #github_link {
     border: none;
 }
 
-#buttons{
-    padding: 20px;
-    justify-items: center;
-    align-items: center;
-}
-.button{
+
+
+.buttons{
+    cursor:pointer;
     border: none;
     padding: 10px 10px;
     border-radius: 0.3em;
 }
-.button:hover{
-    border: solid 0.5px rgba(196, 196, 196, 100);
-    box-shadow: 0px 0px 1px rgba(196, 196, 196, 100);
+.buttons:hover{
+    border: solid 0.5px rgba(196, 196, 196, 1);
+    box-shadow: 0px 0px 1px rgba(196, 196, 196, 1);
 }
 
 
-footer {
+.footers {
     background-color: rgb(214, 214, 214);
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     padding: 10px 0px 10px 0px;
-    color: rgb(173, 173, 173);
 }
 
-footer a{
-    text-decoration: none;
-    color: rgb(173, 173, 173);
-}
-
-footer a:hover{
+.footers a:hover{
     text-decoration: underline; 
+}
+
+#footer1 a{
+    text-decoration: none;
+    color: rgba(0,0,0,0.54);
+    font-size: 15px;
+}
+
+#footer2 a{
+    text-decoration: none;
+    color: #70757a;;
+    font-size: 14px;
 }
