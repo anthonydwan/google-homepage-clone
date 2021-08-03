@@ -5,10 +5,11 @@ Done:
 - [x] basic components
 - [x] the search bar visuals
 - [x] Host the website on Github
+- [x] buttons visuals
+- [x] footer visuals
 
 To Do:
-- [ ] buttons visuals
-- [ ] footer visuals
+
 - [ ] change the apps icon to a more accurate one (in the top nav bar)
 - [ ] add links and popup icon to apps icon 
 - [ ] Add the spinny button 
