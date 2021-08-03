@@ -1,6 +1,6 @@
-To recreate the google homepage. 
+Recreating the google homepage with a sprinkle of my own flair.
 
-Tasklist (part 1):
+Tasklist:
 - [ ] Host the website on Github
 - [x] the search bar visuals
 - [ ] buttons visuals
